@@ -1,0 +1,19 @@
+uuid: 63d3a370-346a-4b41-a6a6-4d160206fe63
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_surtitre
+    - paragraphs.paragraphs_type.slider_custom
+id: paragraph.slider_custom.field_surtitre
+field_name: field_surtitre
+entity_type: paragraph
+bundle: slider_custom
+label: 'sur titre'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

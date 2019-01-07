@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function cci_cpnt_slider_theme($existing, $type, $theme, $path) {
+  return [
+    'sliderblock' => [
+      'variables' => [
+        'content' => NULL
+      ]
+    ],
+    'node__slider' => [
+      'template' => 'node--slider',
+      'base hook' => 'node',
+    ],
+    'paragraph__slider_custom' => [
+      'template' => 'paragraph--slider-custom',
+      'base hook' => 'paragraph',
+    ],
+  ];
+}

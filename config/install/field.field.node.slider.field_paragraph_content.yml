@@ -1,0 +1,36 @@
+uuid: 79381431-dced-41b7-af6c-0119712ae0d3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph_content
+    - node.type.slider
+    - paragraphs.paragraphs_type.slider_auto
+    - paragraphs.paragraphs_type.slider_custom
+  module:
+    - entity_reference_revisions
+id: node.slider.field_paragraph_content
+field_name: field_paragraph_content
+entity_type: node
+bundle: slider
+label: contenu
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      slider_custom: slider_custom
+      slider_auto: slider_auto
+    target_bundles_drag_drop:
+      slider_custom:
+        enabled: true
+        weight: -5
+      slider_auto:
+        enabled: true
+        weight: -4
+field_type: entity_reference_revisions

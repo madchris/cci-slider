@@ -1,0 +1,22 @@
+uuid: 610d572c-c41f-45da-a336-633bfef8c054
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slider_auto.field_node
+    - paragraphs.paragraphs_type.slider_auto
+id: paragraph.slider_auto.default
+targetEntityType: paragraph
+bundle: slider_auto
+mode: default
+content:
+  field_node:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

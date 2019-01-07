@@ -1,0 +1,19 @@
+uuid: 0f027c70-dfa6-42e8-b726-9b1d3a5aa7c8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_label
+    - paragraphs.paragraphs_type.slider_custom
+id: paragraph.slider_custom.field_label
+field_name: field_label
+entity_type: paragraph
+bundle: slider_custom
+label: titre
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

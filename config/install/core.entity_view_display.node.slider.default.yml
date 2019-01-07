@@ -1,0 +1,37 @@
+uuid: c93a9f4c-6216-4469-bcee-438f81258397
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.slider.field_emplacement
+    - field.field.node.slider.field_paragraph_content
+    - node.type.slider
+  module:
+    - entity_reference_revisions
+    - panelizer
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.slider.default
+targetEntityType: node
+bundle: slider
+mode: default
+content:
+  field_paragraph_content:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_emplacement: true
+  langcode: true
+  links: true

@@ -1,0 +1,19 @@
+uuid: 4e15238a-50c1-4505-8369-5332949b89d4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bodyplain
+    - paragraphs.paragraphs_type.slider_custom
+id: paragraph.slider_custom.field_bodyplain
+field_name: field_bodyplain
+entity_type: paragraph
+bundle: slider_custom
+label: 'corps de texte'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

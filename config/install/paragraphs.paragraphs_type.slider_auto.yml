@@ -1,0 +1,9 @@
+uuid: 3a39297c-5e43-455c-8afc-74e9eb3b5533
+langcode: fr
+status: true
+dependencies: {  }
+id: slider_auto
+label: 'slider automatique'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

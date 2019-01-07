@@ -1,0 +1,14 @@
+uuid: 75d016d2-79b8-4657-a0e2-26a98468945f
+langcode: fr
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - node
+third_party_settings:
+  lightning_core:
+    description: ''
+id: node.slider
+label: slider
+targetEntityType: node
+cache: true

@@ -1,0 +1,19 @@
+uuid: 94155308-9e76-475b-b9fd-b03a00c66e7f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_emplacement
+    - node.type.slider
+id: node.slider.field_emplacement
+field_name: field_emplacement
+entity_type: node
+bundle: slider
+label: emplacement
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

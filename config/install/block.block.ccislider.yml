@@ -1,0 +1,20 @@
+uuid: a951274f-6fcf-498e-9ec5-f950964598dc
+langcode: fr
+status: true
+dependencies:
+  module:
+    - cci_cpnt_slider
+  theme:
+    - cci_drome_theme
+id: ccislider
+theme: cci_drome_theme
+region: pre_content_full
+weight: -6
+provider: null
+plugin: cci_slider_block
+settings:
+  id: cci_slider_block
+  label: 'CCI slider'
+  provider: cci_cpnt_slider
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,9 @@
+uuid: a98db979-71f2-4c1e-8b04-654614536c26
+langcode: fr
+status: true
+dependencies: {  }
+id: slider_custom
+label: 'slider personnalisé'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }
