@@ -1,0 +1,32 @@
+<?php
+
+function cci_cpnt_slider_uninstall() {
+  Drupal::configFactory()->getEditable('block.block.ccislider')->delete();
+  Drupal::configFactory()->getEditable('core.entity_form_display.node.slider.default')->delete();
+  Drupal::configFactory()->getEditable('core.entity_form_display.paragraph.slider_auto.default')->delete();
+  Drupal::configFactory()->getEditable('core.entity_form_display.paragraph.slider_custom.default')->delete();
+  Drupal::configFactory()->getEditable('core.entity_view_display.node.slider.default')->delete();
+  Drupal::configFactory()->getEditable('core.entity_view_display.node.slider.teaser')->delete();
+  Drupal::configFactory()->getEditable('core.entity_view_display.paragraph.slider_auto.default')->delete();
+  Drupal::configFactory()->getEditable('core.entity_view_display.paragraph.slider_custom.default')->delete();
+  Drupal::configFactory()->getEditable('core.entity_view_mode.node.slider')->delete();
+  Drupal::configFactory()->getEditable('field.field.node.slider.field_emplacement')->delete();
+  Drupal::configFactory()->getEditable('field.field.node.slider.field_paragraph_content')->delete();
+  Drupal::configFactory()->getEditable('field.field.paragraph.slider_auto.field_node')->delete();
+  Drupal::configFactory()->getEditable('field.field.paragraph.slider_custom.field_bodyplain')->delete();
+  Drupal::configFactory()->getEditable('field.field.paragraph.slider_custom.field_label')->delete();
+  Drupal::configFactory()->getEditable('field.field.paragraph.slider_custom.field_link')->delete();
+  Drupal::configFactory()->getEditable('field.field.paragraph.slider_custom.field_media')->delete();
+  Drupal::configFactory()->getEditable('field.field.paragraph.slider_custom.field_surtitre')->delete();
+  Drupal::configFactory()->getEditable('field.storage.node.field_emplacement')->delete();
+  Drupal::configFactory()->getEditable('field.storage.node.field_paragraph_content')->delete();
+  Drupal::configFactory()->getEditable('field.storage.paragraph.field_bodyplain')->delete();
+  Drupal::configFactory()->getEditable('field.storage.paragraph.field_link')->delete();
+  Drupal::configFactory()->getEditable('field.storage.paragraph.field_media')->delete();
+  Drupal::configFactory()->getEditable('field.storage.paragraph.field_node')->delete();
+  Drupal::configFactory()->getEditable('field.storage.paragraph.field_surtitre')->delete();
+  Drupal::configFactory()->getEditable('language.content_settings.node.slider')->delete();
+  Drupal::configFactory()->getEditable('node.type.slider')->delete();
+  Drupal::configFactory()->getEditable('paragraphs.paragraphs_type.slider_auto')->delete();
+  Drupal::configFactory()->getEditable('paragraphs.paragraphs_type.slider_custom')->delete();
+}
