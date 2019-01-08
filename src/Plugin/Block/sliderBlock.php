@@ -53,7 +53,7 @@ class sliderBlock extends BlockBase {
           'cci_cpnt_slider/slider'
         ],
         'drupalSettings' => [
-          'slider_arrow_path' => '/' . $module_path . '/images/arrow.svg'
+          'slider_arrow_path' => '/' . trim($module_path) . '/images/arrow.svg'
         ]
       ],
       '#attributes' => [
