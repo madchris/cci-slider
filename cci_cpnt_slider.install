@@ -1,5 +1,18 @@
 <?php
 
+function cci_cpnt_slider_install() {
+  file_prepare_directory("public://" . date('Y-m'));
+
+  $files = file_scan_directory(drupal_get_path('module', 'cci_cpnt_slider') . '/content/images');
+
+  if (is_array($files)
+  && !empty($files)) {
+    foreach ($files AS $file) {
+      file_unmanaged_move($file->uri, "public://" . date('Y-m'));
+    }
+  }
+}
+
 function cci_cpnt_slider_uninstall() {
   Drupal::configFactory()->getEditable('block.block.ccislider')->delete();
   Drupal::configFactory()->getEditable('core.entity_form_display.node.slider.default')->delete();
